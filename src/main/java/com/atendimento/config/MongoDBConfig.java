@@ -24,9 +24,10 @@ public class MongoDBConfig extends AbstractMongoClientConfiguration {
         return "atendimento_psicologico";
     }
 
+    //TODO Senha do banco de dados está no documento enviado com o link do git, trocar {SenhaAqui} pela senha.
     @Override
     public MongoClient mongoClient() {
-        final ConnectionString connectionString = new ConnectionString("mongodb+srv://wandersonsilva3:senhabdii2807@trabalhofinalflutter.apjgg2u.mongodb.net/?retryWrites=true&w=majority");
+        final ConnectionString connectionString = new ConnectionString("mongodb+srv://wandersonsilva3:{SenhaAqui}@trabalhofinalflutter.apjgg2u.mongodb.net/?retryWrites=true&w=majority");
         final MongoClientSettings mongoClientSettings = MongoClientSettings.builder()
                 .applyConnectionString(connectionString)
                 .build();
