@@ -19,8 +19,7 @@ public class PacienteService {
         if (pacienteExistente.isEmpty()) {
             repository.save(paciente);
             return "Paciente cadastrado com sucesso";
-        }
-        else {
+        } else {
             throw new AtendimentoPsicologicoException("Paciente já existe", HttpStatus.BAD_REQUEST.value());
         }
     }

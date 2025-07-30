@@ -8,4 +8,5 @@ import java.time.LocalTime;
 public record CreateSlotRequest(
         @JsonFormat(pattern = "yyyy-MM-dd") LocalDate data,
         @JsonFormat(pattern = "HH:mm") LocalTime hora
-) { }
+) {
+}

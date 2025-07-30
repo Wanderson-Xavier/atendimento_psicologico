@@ -6,7 +6,7 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public enum TipoUsuarioEnum {
-    PACIENTE("Paciente"), 
+    PACIENTE("Paciente"),
     PSICOLOGO("Psicológo");
 
     private final String tipo;

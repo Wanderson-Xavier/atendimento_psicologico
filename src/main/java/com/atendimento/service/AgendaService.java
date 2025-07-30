@@ -5,11 +5,9 @@ import com.atendimento.model.Agenda;
 import com.atendimento.model.SlotAgenda;
 import com.atendimento.repository.AgendaRepository;
 import lombok.RequiredArgsConstructor;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-
 
 import java.time.LocalDate;
 import java.time.LocalTime;

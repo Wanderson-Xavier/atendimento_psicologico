@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @Data
 public class Usuario {
-	private String id;
+    private String id;
     private String email;
     private String senha;
     private TipoUsuarioEnum tipo;

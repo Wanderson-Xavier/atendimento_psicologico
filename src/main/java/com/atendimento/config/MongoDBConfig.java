@@ -1,4 +1,5 @@
 package com.atendimento.config;
+
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
 import com.mongodb.client.MongoClient;
@@ -11,7 +12,7 @@ import org.springframework.data.mongodb.config.AbstractMongoClientConfiguration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @Configuration
-@EnableMongoRepositories(basePackages ="com.atendimento.repository")
+@EnableMongoRepositories(basePackages = "com.atendimento.repository")
 public class MongoDBConfig extends AbstractMongoClientConfiguration {
     @Bean
     MongoTransactionManager transactionManager(MongoDatabaseFactory dbFactory) {

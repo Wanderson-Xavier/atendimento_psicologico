@@ -1,4 +1,5 @@
 package com.atendimento.enums;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -7,6 +8,6 @@ import lombok.Getter;
 public enum StatusSessaoEnum {
     AGENDADA("Agendada"), CONCLUIDA("Concluída"), CANCELADA("Cancelada");
 
-  private final String status;
+    private final String status;
 
 }
